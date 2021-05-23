@@ -8,14 +8,14 @@ public class UserregistrationTest {
     @Test
     public void givenFirstName_whenMin3Chars_FirstCharCaps_ReturnValid() throws Exception {
         Userregistration u = new Userregistration();
-        String result = u.validFirstName("Vaishnavi");
+        String result = u.validFirstName("Ankit");
         Assertions.assertEquals("VALID", result);
     }
 
     @Test
     public void givenFirstName_whenMin3Chars_FirstCharNotCaps_ReturnInvalid() throws Exception {
         Userregistration u = new Userregistration();
-        String result = u.validFirstName("Ankit");
+        String result = u.validFirstName("ankit");
         Assertions.assertEquals("INVALID", result);
     }
 
